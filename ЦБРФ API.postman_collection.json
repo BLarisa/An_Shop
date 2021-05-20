@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "8e6370bb-bc92-449e-ae9a-a50700e99248",
+		"name": "ЦБРФ API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Курс валют",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.cbr-xml-daily.ru/daily_json.js",
+					"protocol": "https",
+					"host": [
+						"www",
+						"cbr-xml-daily",
+						"ru"
+					],
+					"path": [
+						"daily_json.js"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

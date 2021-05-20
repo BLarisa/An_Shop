@@ -12,6 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class AutorizationForm : Form
     {
+        private anotherShopBDEntities db = new anotherShopBDEntities();
+
         public AutorizationForm()
         {
             InitializeComponent();
@@ -36,24 +38,21 @@ namespace WindowsFormsApp1
 
         private void WantUser(int id)
         {
-         
-
             this.Hide();
             UserForm userForm = new UserForm();
             userForm.UserID = id;
             userForm.Show();
         }
+
         private void WantAdmin()
         {
             this.Hide();
             AdminForm adminForm = new AdminForm();
             adminForm.Show();
         }
-        anotherShopBDEntities db = new anotherShopBDEntities();
 
         void DataEntry(int id)
         {
-
             DateTime EntryDateTime = DateTime.UtcNow;
             History_Users history_Users = new History_Users
             {
@@ -62,8 +61,6 @@ namespace WindowsFormsApp1
             };
             db.History_Users.Add(history_Users);
             db.SaveChanges();
-            
-
         }
 
         private void Autor()

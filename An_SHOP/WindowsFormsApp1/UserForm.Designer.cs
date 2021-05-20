@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
             this.buttonDeleteItem = new System.Windows.Forms.Button();
             this.buttonExitSystem = new System.Windows.Forms.Button();
             this.labelUser = new System.Windows.Forms.Label();
+            this.currencyBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItems)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +89,22 @@ namespace WindowsFormsApp1
             this.labelUser.TabIndex = 5;
             this.labelUser.Text = "label1";
             // 
+            // currencyBtn
+            // 
+            this.currencyBtn.Location = new System.Drawing.Point(683, 9);
+            this.currencyBtn.Name = "currencyBtn";
+            this.currencyBtn.Size = new System.Drawing.Size(106, 34);
+            this.currencyBtn.TabIndex = 6;
+            this.currencyBtn.Text = "Курс валют";
+            this.currencyBtn.UseVisualStyleBackColor = true;
+            this.currencyBtn.Click += new System.EventHandler(this.currencyBtn_Click);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 507);
+            this.Controls.Add(this.currencyBtn);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.buttonExitSystem);
             this.Controls.Add(this.buttonDeleteItem);
@@ -115,5 +127,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button buttonDeleteItem;
         private System.Windows.Forms.Button buttonExitSystem;
         private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Button currencyBtn;
     }
 }

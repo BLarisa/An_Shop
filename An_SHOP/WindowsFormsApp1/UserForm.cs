@@ -125,5 +125,11 @@ namespace WindowsFormsApp1
         {
             selItemDataGrid();
         }
+
+        private void currencyBtn_Click(object sender, EventArgs e)
+        {
+            CurrencyForm cf = new CurrencyForm();
+            cf.ShowDialog();
+        }
     }
 }
