@@ -66,43 +66,31 @@ namespace WindowsFormsApp1
 
         }
 
-       
-
         private void Autor()
         {
-            var SelectUserId = db.Users
-          .Where(c => c.Login == textBoxLogin.Text && c.Login == textBoxPassword.Text)
-          .Select(c => c.ID)
-          .FirstOrDefault();
-
-            var Autorization = db.Users
-                .Where(c => c.Login == textBoxLogin.Text && c.Login == textBoxPassword.Text)
-                .Select(c => c.Role_ID)
+            Users result = db.Users
+                .Where(c => c.Login == textBoxLogin.Text && c.Pass == textBoxPassword.Text)
+                .Select(c => c)
                 .FirstOrDefault();
 
-         
-
-            if (Autorization != null)
+            if(result == null)
             {
-                if(Autorization == 1)
-                {
-                    WantAdmin();
-                   
-                }   
-                else if(Autorization == 2)
-                {
-                    WantUser(SelectUserId);
-                    DataEntry(SelectUserId);
+                MessageBox.Show("Логин или пароль не правильные, попробуйте еще раз!");
+                return;
+            }
 
-                }
-                else
-                {
-                    MessageBox.Show("В разработке...");
-                }
+            if(result.Role_ID == 1)
+            {
+                WantAdmin();
+            }   
+            else if(result.Role_ID == 2)
+            {
+                WantUser(result.ID);
+                DataEntry(result.ID);
             }
             else
             {
-                MessageBox.Show("Логин или пароль не правильные, попробуйте еще раз!");
+                MessageBox.Show("В разработке...");
             }
         }
     }
