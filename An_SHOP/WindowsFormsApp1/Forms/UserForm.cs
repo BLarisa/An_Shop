@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Objects;
 
 namespace WindowsFormsApp1
 {
@@ -20,6 +21,7 @@ namespace WindowsFormsApp1
 
         public string SelectedNameGrid;
         anotherShopBDEntities db = new anotherShopBDEntities();
+
         public int UserID
         {
             get { return id; }
@@ -67,8 +69,6 @@ namespace WindowsFormsApp1
             addItem.Show();
         }
 
-
-
         private void UserForm_Load(object sender, EventArgs e)
         {
             FillInfAboutUser();
@@ -104,7 +104,22 @@ namespace WindowsFormsApp1
                 {
                     db.Items.Remove(SearchItem);
                     db.SaveChanges();
-                    dataGridViewItems.Update();
+
+                    dataGridViewItems.Rows.Clear();
+                    var Items = db.Items
+                    .Select(m => new
+                    {
+                        Наименование = m.Item_Name,
+                        Цена = m.Item_Price,
+                        Количество = m.Item_Amount,
+                        Поставщик = m.Suppliers.Suplier_Name,
+                    })
+                    .ToList();
+
+                    if (Items != null)
+                    {
+                        dataGridViewItems.DataSource = Items;
+                    }
                 }
                
             }

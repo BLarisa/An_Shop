@@ -41,18 +41,18 @@ namespace WindowsFormsApp1
             // dataGridViewItems
             // 
             this.dataGridViewItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewItems.Location = new System.Drawing.Point(189, 63);
+            this.dataGridViewItems.Location = new System.Drawing.Point(189, 49);
             this.dataGridViewItems.Name = "dataGridViewItems";
             this.dataGridViewItems.RowHeadersWidth = 51;
             this.dataGridViewItems.RowTemplate.Height = 24;
             this.dataGridViewItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewItems.Size = new System.Drawing.Size(600, 432);
+            this.dataGridViewItems.Size = new System.Drawing.Size(600, 446);
             this.dataGridViewItems.TabIndex = 0;
             this.dataGridViewItems.SelectionChanged += new System.EventHandler(this.dataGridViewItems_SelectionChanged);
             // 
             // buttonAddItem
             // 
-            this.buttonAddItem.Location = new System.Drawing.Point(5, 63);
+            this.buttonAddItem.Location = new System.Drawing.Point(5, 49);
             this.buttonAddItem.Name = "buttonAddItem";
             this.buttonAddItem.Size = new System.Drawing.Size(178, 45);
             this.buttonAddItem.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             // 
             // buttonDeleteItem
             // 
-            this.buttonDeleteItem.Location = new System.Drawing.Point(5, 114);
+            this.buttonDeleteItem.Location = new System.Drawing.Point(5, 100);
             this.buttonDeleteItem.Name = "buttonDeleteItem";
             this.buttonDeleteItem.Size = new System.Drawing.Size(178, 45);
             this.buttonDeleteItem.TabIndex = 2;
@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Location = new System.Drawing.Point(12, 9);
+            this.labelUser.Location = new System.Drawing.Point(12, 18);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(46, 17);
             this.labelUser.TabIndex = 5;
