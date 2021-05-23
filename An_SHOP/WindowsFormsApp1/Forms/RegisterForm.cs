@@ -17,6 +17,12 @@ namespace WindowsFormsApp1
         public RegisterForm()
         {
             InitializeComponent();
+            this.FormClosing += RegisterForm_FormClosing;
+        }
+
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         anotherShopBDEntities db = new anotherShopBDEntities();
@@ -37,29 +43,27 @@ namespace WindowsFormsApp1
             if(textBoxFIO.Text == "" && textBoxLOGIN.Text == "" && textBoxPASS.Text == "" && comboBox1.SelectedItem.ToString() == "")
             {
                 MessageBox.Show("Вы не заполнили все необходимые поля!");
+                return;
             }
-            else
-            {
-                var SelectRole = db.Roles
+
+            var SelectRole = db.Roles
                 .Where(c => c.Role_Name == comboBox1.SelectedItem.ToString())
                 .Select(c => c.ID)
                 .FirstOrDefault();
 
-                Users users = new Users
-                {
-                    FIO = textBoxFIO.Text,
-                    Login = textBoxLOGIN.Text,
-                    Pass = textBoxPASS.Text,
-                    Role_ID = SelectRole,
+            Users users = new Users
+            {
+                FIO = textBoxFIO.Text,
+                Login = textBoxLOGIN.Text,
+                Pass = textBoxPASS.Text,
+                Role_ID = SelectRole
+            };
 
-                };
+            db.Users.Add(users);
+            db.SaveChanges();
 
-                db.Users.Add(users);
-                db.SaveChanges();
-                MessageBox.Show("Успешная регистрация!");
-                WantAutor();
-            }
-            
+            MessageBox.Show("Успешная регистрация!");
+            WantAutor();
         }
 
         private void FillListBoxRole()
@@ -80,7 +84,5 @@ namespace WindowsFormsApp1
         {
             FillListBoxRole();
         }
-
-
     }
 }

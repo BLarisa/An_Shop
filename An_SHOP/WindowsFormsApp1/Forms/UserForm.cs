@@ -105,7 +105,7 @@ namespace WindowsFormsApp1
                     db.Items.Remove(SearchItem);
                     db.SaveChanges();
 
-                    dataGridViewItems.Rows.Clear();
+                    //dataGridViewItems.Rows.Clear();
                     var Items = db.Items
                     .Select(m => new
                     {

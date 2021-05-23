@@ -44,10 +44,10 @@ namespace WindowsFormsApp1
             // textBoxLOGIN
             // 
             this.textBoxLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxLOGIN.Location = new System.Drawing.Point(9, 137);
-            this.textBoxLOGIN.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxLOGIN.Location = new System.Drawing.Point(7, 111);
+            this.textBoxLOGIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxLOGIN.Name = "textBoxLOGIN";
-            this.textBoxLOGIN.Size = new System.Drawing.Size(368, 41);
+            this.textBoxLOGIN.Size = new System.Drawing.Size(277, 35);
             this.textBoxLOGIN.TabIndex = 38;
             // 
             // textBoxFIO
@@ -56,19 +56,20 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxFIO.Location = new System.Drawing.Point(11, 51);
-            this.textBoxFIO.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxFIO.Location = new System.Drawing.Point(8, 41);
+            this.textBoxFIO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxFIO.Name = "textBoxFIO";
-            this.textBoxFIO.Size = new System.Drawing.Size(366, 41);
+            this.textBoxFIO.Size = new System.Drawing.Size(276, 35);
             this.textBoxFIO.TabIndex = 37;
             // 
             // labelFIO
             // 
             this.labelFIO.AutoSize = true;
             this.labelFIO.Font = new System.Drawing.Font("Comic Sans MS", 14.2F);
-            this.labelFIO.Location = new System.Drawing.Point(7, 15);
+            this.labelFIO.Location = new System.Drawing.Point(5, 12);
+            this.labelFIO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFIO.Name = "labelFIO";
-            this.labelFIO.Size = new System.Drawing.Size(67, 33);
+            this.labelFIO.Size = new System.Drawing.Size(53, 26);
             this.labelFIO.TabIndex = 39;
             this.labelFIO.Text = "ФИО";
             // 
@@ -76,9 +77,10 @@ namespace WindowsFormsApp1
             // 
             this.labelLogin.AutoSize = true;
             this.labelLogin.Font = new System.Drawing.Font("Comic Sans MS", 14.2F);
-            this.labelLogin.Location = new System.Drawing.Point(7, 101);
+            this.labelLogin.Location = new System.Drawing.Point(5, 82);
+            this.labelLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(86, 33);
+            this.labelLogin.Size = new System.Drawing.Size(69, 26);
             this.labelLogin.TabIndex = 40;
             this.labelLogin.Text = "Логин";
             // 
@@ -86,29 +88,31 @@ namespace WindowsFormsApp1
             // 
             this.labelPass.AutoSize = true;
             this.labelPass.Font = new System.Drawing.Font("Comic Sans MS", 14.2F);
-            this.labelPass.Location = new System.Drawing.Point(7, 184);
+            this.labelPass.Location = new System.Drawing.Point(5, 150);
+            this.labelPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(104, 33);
+            this.labelPass.Size = new System.Drawing.Size(81, 26);
             this.labelPass.TabIndex = 42;
             this.labelPass.Text = "Пароль";
             // 
             // textBoxPASS
             // 
             this.textBoxPASS.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxPASS.Location = new System.Drawing.Point(11, 220);
-            this.textBoxPASS.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxPASS.Location = new System.Drawing.Point(8, 179);
+            this.textBoxPASS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPASS.Name = "textBoxPASS";
             this.textBoxPASS.PasswordChar = '*';
-            this.textBoxPASS.Size = new System.Drawing.Size(368, 41);
+            this.textBoxPASS.Size = new System.Drawing.Size(277, 35);
             this.textBoxPASS.TabIndex = 41;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.2F);
-            this.label1.Location = new System.Drawing.Point(7, 273);
+            this.label1.Location = new System.Drawing.Point(5, 222);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 33);
+            this.label1.Size = new System.Drawing.Size(54, 26);
             this.label1.TabIndex = 43;
             this.label1.Text = "Роль";
             // 
@@ -117,10 +121,10 @@ namespace WindowsFormsApp1
             this.buttonLogin.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.buttonLogin.Location = new System.Drawing.Point(9, 386);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonLogin.Location = new System.Drawing.Point(7, 314);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(368, 51);
+            this.buttonLogin.Size = new System.Drawing.Size(276, 41);
             this.buttonLogin.TabIndex = 45;
             this.buttonLogin.Text = "Зарегистрироваться";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -129,9 +133,10 @@ namespace WindowsFormsApp1
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(317, 12);
+            this.button1.Location = new System.Drawing.Point(221, 10);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 33);
+            this.button1.Size = new System.Drawing.Size(64, 27);
             this.button1.TabIndex = 46;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
@@ -142,16 +147,17 @@ namespace WindowsFormsApp1
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Comic Sans MS", 14.2F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 309);
+            this.comboBox1.Location = new System.Drawing.Point(10, 251);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(364, 41);
+            this.comboBox1.Size = new System.Drawing.Size(274, 34);
             this.comboBox1.TabIndex = 47;
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 449);
+            this.ClientSize = new System.Drawing.Size(292, 365);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonLogin);
@@ -163,6 +169,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.textBoxLOGIN);
             this.Controls.Add(this.textBoxFIO);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterForm";
             this.Text = "Регистрация";
             this.Load += new System.EventHandler(this.RegisterForm_Load);

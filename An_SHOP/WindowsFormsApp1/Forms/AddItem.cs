@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
               .FirstOrDefault();
 
                 int itemPrice, amount;
-                if(Int32.TryParse(textBoxItemPrice.Text, out itemPrice) || Int32.TryParse(textBoxAmountItem.Text, out amount))
+                if(!Int32.TryParse(textBoxItemPrice.Text, out itemPrice) || !Int32.TryParse(textBoxAmountItem.Text, out amount))
                 {
                     MessageBox.Show("Проверьте правильность введённых данных", "Ошибка добавления предмета", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
